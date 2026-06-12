@@ -218,12 +218,12 @@ Material:
     - __dirty: 0
     m_Colors:
     - _CustomColorMaskChannels: {r: 1, g: 0, b: 0, a: 0}
-    - _FinalColor: {r: 0.2830189, g: 0.23794319, b: 0.2282841, a: 1}
+    - _FinalColor: {r: 0.45911938, g: 0.0983827, b: 0, a: 1}
     - _MVMainMaskChannels: {r: 1, g: 0, b: 0, a: 0}
     - _MVMainMaskChannelsMultiply: {r: 1, g: 0, b: 0, a: 0}
     - _MainMaskChannelsMultiply: {r: 1, g: 1, b: 1, a: 0}
     - _Noise01ScrollSpeedUV: {r: 1, g: 1, b: 0, a: 0}
-    - _RampColorTint: {r: 1, g: 1, b: 1, a: 1}
+    - _RampColorTint: {r: 1, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &7994673990528731689

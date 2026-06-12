@@ -4,71 +4,206 @@ labels:
 - character
 - skeleton
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Armature
-    100002: body
-    100004: chest
-    100006: foot.L
-    100008: foot.L_end
-    100010: foot.R
-    100012: foot.R_end
-    100014: hand.L
-    100016: hand.L_end
-    100018: hand.R
-    100020: hand.R_end
-    100022: head
-    100024: head_end
-    100026: hip
-    100028: lowerArm.L
-    100030: lowerArm.R
-    100032: lowerLeg.L
-    100034: lowerLeg.R
-    100036: neck
-    100038: //RootNode
-    100040: shoulder.L
-    100042: shoulder.R
-    100044: stomach
-    100046: upperArm.L
-    100048: upperArm.R
-    100050: upperLeg.L
-    100052: upperLeg.R
-    400000: Armature
-    400002: body
-    400004: chest
-    400006: foot.L
-    400008: foot.L_end
-    400010: foot.R
-    400012: foot.R_end
-    400014: hand.L
-    400016: hand.L_end
-    400018: hand.R
-    400020: hand.R_end
-    400022: head
-    400024: head_end
-    400026: hip
-    400028: lowerArm.L
-    400030: lowerArm.R
-    400032: lowerLeg.L
-    400034: lowerLeg.R
-    400036: neck
-    400038: //RootNode
-    400040: shoulder.L
-    400042: shoulder.R
-    400044: stomach
-    400046: upperArm.L
-    400048: upperArm.R
-    400050: upperLeg.L
-    400052: upperLeg.R
-    2100000: black
-    2100002: skin
-    2100004: white
-    4300000: body
-    9500000: //RootNode
-    13700000: body
-  externalObjects: {}
+  serializedVersion: 24200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Armature
+  - first:
+      1: 100002
+    second: body
+  - first:
+      1: 100004
+    second: chest
+  - first:
+      1: 100006
+    second: foot.L
+  - first:
+      1: 100008
+    second: foot.L_end
+  - first:
+      1: 100010
+    second: foot.R
+  - first:
+      1: 100012
+    second: foot.R_end
+  - first:
+      1: 100014
+    second: hand.L
+  - first:
+      1: 100016
+    second: hand.L_end
+  - first:
+      1: 100018
+    second: hand.R
+  - first:
+      1: 100020
+    second: hand.R_end
+  - first:
+      1: 100022
+    second: head
+  - first:
+      1: 100024
+    second: head_end
+  - first:
+      1: 100026
+    second: hip
+  - first:
+      1: 100028
+    second: lowerArm.L
+  - first:
+      1: 100030
+    second: lowerArm.R
+  - first:
+      1: 100032
+    second: lowerLeg.L
+  - first:
+      1: 100034
+    second: lowerLeg.R
+  - first:
+      1: 100036
+    second: neck
+  - first:
+      1: 100038
+    second: //RootNode
+  - first:
+      1: 100040
+    second: shoulder.L
+  - first:
+      1: 100042
+    second: shoulder.R
+  - first:
+      1: 100044
+    second: stomach
+  - first:
+      1: 100046
+    second: upperArm.L
+  - first:
+      1: 100048
+    second: upperArm.R
+  - first:
+      1: 100050
+    second: upperLeg.L
+  - first:
+      1: 100052
+    second: upperLeg.R
+  - first:
+      4: 400000
+    second: Armature
+  - first:
+      4: 400002
+    second: body
+  - first:
+      4: 400004
+    second: chest
+  - first:
+      4: 400006
+    second: foot.L
+  - first:
+      4: 400008
+    second: foot.L_end
+  - first:
+      4: 400010
+    second: foot.R
+  - first:
+      4: 400012
+    second: foot.R_end
+  - first:
+      4: 400014
+    second: hand.L
+  - first:
+      4: 400016
+    second: hand.L_end
+  - first:
+      4: 400018
+    second: hand.R
+  - first:
+      4: 400020
+    second: hand.R_end
+  - first:
+      4: 400022
+    second: head
+  - first:
+      4: 400024
+    second: head_end
+  - first:
+      4: 400026
+    second: hip
+  - first:
+      4: 400028
+    second: lowerArm.L
+  - first:
+      4: 400030
+    second: lowerArm.R
+  - first:
+      4: 400032
+    second: lowerLeg.L
+  - first:
+      4: 400034
+    second: lowerLeg.R
+  - first:
+      4: 400036
+    second: neck
+  - first:
+      4: 400038
+    second: //RootNode
+  - first:
+      4: 400040
+    second: shoulder.L
+  - first:
+      4: 400042
+    second: shoulder.R
+  - first:
+      4: 400044
+    second: stomach
+  - first:
+      4: 400046
+    second: upperArm.L
+  - first:
+      4: 400048
+    second: upperArm.R
+  - first:
+      4: 400050
+    second: upperLeg.L
+  - first:
+      4: 400052
+    second: upperLeg.R
+  - first:
+      21: 2100000
+    second: black
+  - first:
+      21: 2100002
+    second: skin
+  - first:
+      21: 2100004
+    second: white
+  - first:
+      43: 4300000
+    second: body
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: body
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 2e2a801c1f8726d4aa80c3e9854fe093, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: 2bd44da7f4d0866498cee4425aa9c1d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: 40736c23dc5437940ae6556f2864fd3d, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -77,9 +212,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -100,34 +234,52 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: hip
       humanName: Hips
@@ -424,13 +576,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

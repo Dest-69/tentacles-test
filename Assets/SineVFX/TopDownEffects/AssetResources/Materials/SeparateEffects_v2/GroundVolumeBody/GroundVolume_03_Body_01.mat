@@ -98,7 +98,7 @@ Material:
     - _Distortion_Mask_Negate: 0.25
     - _FinalOpacityPower: 2
     - _FinalOpacityPower_1: 1
-    - _FinalPower: 6
+    - _FinalPower: 27.6
     - _Flip_UV_Direction: 0
     - _Float: 2
     - _Float_1: 0
@@ -146,7 +146,7 @@ Material:
     - _Distortion_UV_Scale: {r: 1, g: 0.5, b: 0, a: 0}
     - _FinalColor: {r: 1, g: 1, b: 1, a: 1}
     - _Flow_UV_Manual_Adjust: {r: 0, g: 0, b: 0, a: 0}
-    - _RampColorTint: {r: 1, g: 1, b: 1, a: 1}
+    - _RampColorTint: {r: 1, g: 0.08785516, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &2822150004779011370

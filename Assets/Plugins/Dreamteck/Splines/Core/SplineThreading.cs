@@ -73,7 +73,10 @@ namespace Dreamteck.Splines
 
             internal void Queue(EmptyHandler handler)
             {
-                worker.instructions.Enqueue(handler);
+                lock (locker)
+                {
+                    worker.instructions.Enqueue(handler);
+                }
             }
 
             internal void Interrupt()

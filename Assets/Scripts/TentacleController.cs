@@ -467,7 +467,7 @@ public class TentacleController : MonoBehaviour
     {
         if (currentState != TentacleState.Throw && currentState != TentacleState.Pull) return;
         
-        rig.weight = 0f; // Окончательно размоталась
+        rig.weight = 0f; // Fully unwound
 
         if (playerTransform.parent != null && player.isGrabbed)
         {

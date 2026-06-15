@@ -5,11 +5,11 @@ public class TentacleSplineDriver : MonoBehaviour
 {
     [Header("Components")]
     public SplineComputer spline;
-    public Transform[] targets; // Сюда закинем 31 пустышку (Target_Bones)
+    public Transform[] targets; // Assign 31 empty objects here (Target_Bones)
 
     [Header("Controls")]
     [Range(0f, 1f)] 
-    public float coverage = 1f; // Насколько тентакля заполняет сплайн
+    public float coverage = 1f; // How much the tentacle fills the spline
 
     private Quaternion[] rotationOffsets;
 

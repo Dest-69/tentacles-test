@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -169,11 +169,11 @@ namespace RagdollMecanimMixer {
             var forward = Vector3.Cross(axis, secondaryAxis).normalized;
             var up = Vector3.Cross(forward, right).normalized;
             Quaternion jointRotation = Quaternion.LookRotation(forward, up);
-            //Трансформация в мировую систему
+            // Transform to world system
             Quaternion resultRotation = Quaternion.Inverse(jointRotation);
-            //Контр ротация и принятие новой локальной ротации
+            // Counter rotation and apply new local rotation
             resultRotation *= Quaternion.Inverse(targetRotation) * startRotation;
-            //Трансформация обратно в систему джоинта
+            // Transform back to joint system
             resultRotation *= jointRotation;
             return resultRotation;
         }

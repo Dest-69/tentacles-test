@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;
     public RamecanMixer ramecanMixer;
     public Rigidbody[] staticBonesWhenGrabbed; // Bones that become kinematic when grabbed
+    public EffectVfxManager vfxManager;
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
@@ -21,6 +22,12 @@ public class PlayerController : MonoBehaviour
     public bool isRagdoll = false;
     public bool isGrabbed = false;
     
+    [Header("Camera Switching")]
+    public GameObject tppCamera;
+    public GameObject fppCamera;
+    public Renderer[] playerRenderers;
+    
+    private bool isFirstPerson = false;
     private float calmTimer = 0f;
     private Vector3 inputDirection;
     private float inputVelocity;
@@ -39,6 +46,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (!isInitialized) return;
+
+        if (UnityEngine.InputSystem.Keyboard.current != null && UnityEngine.InputSystem.Keyboard.current.vKey.wasPressedThisFrame)
+        {
+            ToggleCameraView();
+        }
 
         if (isRagdoll)
         {
@@ -170,6 +182,11 @@ public class PlayerController : MonoBehaviour
         isRagdoll = state;
         calmTimer = 0f;
 
+        if (vfxManager != null)
+        {
+            vfxManager.ShowStun(isRagdoll);
+        }
+
         if (isRagdoll)
         {
             // Disable animator & script control, enable physics
@@ -203,6 +220,21 @@ public class PlayerController : MonoBehaviour
 
             // Reparent back after all states are updated (worldPositionStays = true keeps their actual world positions)
             ragdollContainer.SetParent(originalParent, true);
+        }
+    }
+
+    public void ToggleCameraView()
+    {
+        isFirstPerson = !isFirstPerson;
+
+        tppCamera.SetActive(!isFirstPerson);
+        fppCamera.SetActive(isFirstPerson);
+
+        foreach (Renderer r in playerRenderers)
+        {
+            r.shadowCastingMode = isFirstPerson 
+                ? UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly 
+                : UnityEngine.Rendering.ShadowCastingMode.On;
         }
     }
 }

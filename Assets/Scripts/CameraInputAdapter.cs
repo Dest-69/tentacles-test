@@ -6,21 +6,22 @@ public class CameraInputAdapter : MonoBehaviour
 {
     [Header("Components")]
     public CinemachineOrbitalFollow orbitalFollow;
+    public CinemachinePanTilt panTilt;
     
     [Header("Sensitivity")]
     public float lookSensitivity = 0.2f;
 
     private void Start()
     {
-        if (orbitalFollow == null)
+        if (orbitalFollow == null && panTilt == null)
         {
-            Debug.LogWarning("[CameraInputAdapter] orbitalFollow is NOT assigned in the Inspector!", this);
+            Debug.LogWarning("[CameraInputAdapter] Neither orbitalFollow nor panTilt is assigned in the Inspector!", this);
         }
     }
 
     private void Update()
     {
-        if (orbitalFollow == null)
+        if (orbitalFollow == null && panTilt == null)
         {
             return;
         }
@@ -36,12 +37,19 @@ public class CameraInputAdapter : MonoBehaviour
 
         if (lookInput != Vector2.zero)
         {
-            // Apply values to the camera axes
-            orbitalFollow.HorizontalAxis.Value += lookInput.x * lookSensitivity;
+            // Apply values to orbital follow if assigned
+            if (orbitalFollow != null)
+            {
+                orbitalFollow.HorizontalAxis.Value += lookInput.x * lookSensitivity;
+                orbitalFollow.VerticalAxis.Value -= lookInput.y * lookSensitivity; 
+            }
             
-            // Subtract Y so the camera is not inverted vertically 
-            // (or add if inversion is needed)
-            orbitalFollow.VerticalAxis.Value -= lookInput.y * lookSensitivity; 
+            // Apply values to pan tilt (First Person Perspective) if assigned
+            if (panTilt != null)
+            {
+                panTilt.PanAxis.Value += lookInput.x * lookSensitivity;
+                panTilt.TiltAxis.Value -= lookInput.y * lookSensitivity;
+            }
         }
     }
 }
